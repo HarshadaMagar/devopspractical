@@ -1,4 +1,4 @@
-name: Print DateTime
+name: DateTime
 on:
   schedule:
       - cron: " */15 * * * * "
@@ -8,11 +8,6 @@ jobs:
  print-DateTime:
    runs-on:ubuntu-latest
    steps:
-    -name: print current date and time 
-      run: |
-        echo "Current date and time: $(date)"
-    
-
-    
-     
-  
+     - name: print current date and time 
+        run: |
+          echo "Current date and time: $(date)"
