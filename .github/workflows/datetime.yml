@@ -1,0 +1,10 @@
+name : datetime
+on: 
+  schedule:
+   - cron : '*/15 * * * *'
+
+job:
+  build :
+    steps:
+ 
+ 
