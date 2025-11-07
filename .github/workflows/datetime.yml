@@ -6,8 +6,8 @@ on:
   workflow_dispatch:
 jobs:
  print-DateTime:
-   runs-on:ubuntu-latest
+   runs-on: ubuntu-latest
    steps:
      - name: print current date and time 
-        run: |
-          echo "Current date and time: $(date)"
+        run :|
+          echo "Current date and time:$(date)"
