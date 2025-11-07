@@ -1,10 +1,20 @@
 name : datetime
 on: 
-  schedule:
-   - cron : '*/15 * * * *'
+  
+     schedule:
+        - cron : '*/15 * * * *'
 
-job:
-  build :
-    steps:
- 
- 
+
+jobs :
+  print-date:
+      runs-on : ubuntu-latest
+      steps : 
+         - name: date and time 
+           run : |
+             echo "date and time ($date)"
+  
+    
+
+    
+     
+  
